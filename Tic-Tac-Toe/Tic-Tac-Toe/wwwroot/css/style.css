@@ -1,0 +1,128 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 20px;
+}
+
+input, button {
+    padding: 10px;
+    margin: 5px;
+    font-size: 1rem;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    gap: 5px;
+    justify-content: center;
+    margin: 20px auto;
+}
+
+.board div {
+    width: 100px;
+    height: 100px;
+    background: white;
+    border: 2px solid #333;
+    font-size: 2rem;
+    line-height: 100px;
+}
+
+.form-container {
+    background: white;
+    padding: 30px;
+    margin: auto;
+    display: inline-block;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+/* Задний фон модального окна */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Содержимое окна */
+.modal-content {
+    background: #fff;
+    padding: 20px 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    min-width: 250px;
+    text-align: center;
+}
+
+.modal-content label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.modal-content input {
+    width: 100%;
+    padding: 6px;
+    font-size: 14px;
+    margin-top: 4px;
+}
+
+.modal-content button {
+    padding: 6px 12px;
+    margin: 5px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: sans-serif;
+    background: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.board {
+    display: grid;
+    gap: 5px;
+    background: #333;
+    padding: 5px;
+    border-radius: 8px;
+}
+
+.board div {
+    width: 60px;
+    height: 60px;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 4px;
+    user-select: none;
+}
+
+.board div:hover {
+    background: #e0e0e0;
+}
+
+#status {
+    margin-top: 15px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
